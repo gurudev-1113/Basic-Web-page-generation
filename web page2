@@ -26,19 +26,24 @@
         <div class="welcome-heading">
             <h1>HII, WELCOME to Our Shopping Site!</h1>
         </div>
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="https://tinyurl.com/4zm8bsun" alt="Descriptive Text" class="image" />
+        </div>
     </section>
 
-    <!-- Example Shopping Section -->
+    <!-- Shop Section -->
     <section id="shop">
         <h2>Featured Products</h2>
         <div class="product-list">
             <div class="product-card">
-                <img src="laptop.jpg" alt="Laptop" />
-                <p>Laptop Model XYZ</p>
+                <img src="https://tinyurl.com/55dtj7zy" alt="Laptop" class="product-image" />
+                <p>HP Laptop</p>
             </div>
+            <!-- Add more products here -->
             <div class="product-card">
-                <img src="phone.jpg" alt="Phone" />
-                <p>Smartphone Model ABC</p>
+                <img src="https://tinyurl.com/mwu6npmx" alt="Mobile" class="product-image" />
+                <p>Samsung Mobile</p>
             </div>
         </div>
     </section>
@@ -51,7 +56,8 @@
     <script src="script.js"></script>
 </body>
 </html>
-//// csss//// code
+
+
 
 /* Global Styles */
 body {
@@ -136,11 +142,77 @@ nav {
     align-items: center;
     color: white;
 }
+/* Container to hold the image */
+.image-container {
+    position: relative;
+    width: 50%; /* Adjust width as per your design */
+    height:150px; /* Adjust height as per your design */
+    overflow: hidden;
+}
+
+/* Style for the image */
+.image {
+    width: 70%; /* Make the image span the full width of its container */
+    height: 30%; /* Make the image span the full height of its container */
+    object-fit: cover; /* Ensure the image covers the area and maintains aspect ratio */
+    opacity: 10.5; /* Adjust the opacity of the image */
+}
+/* Container to hold the image */
+.image-container {
+    position: relative;
+    width: 100%; /* Adjust width as per your design */
+    height: 500px; /* Adjust height as per your design */
+    overflow: hidden;
+    border: 5px solid #000; /* Border around the container */
+    border-radius: 10px; /* Optional: Add rounded corners to the container */
+}
+
+/* Style for the image */
+.image {
+    width: 100%; /* Make the image span the full width of its container */
+    height: 100%; /* Make the image span the full height of its container */
+    object-fit: cover; /* Ensure the image covers the area and maintains aspect ratio */
+    opacity: 0.5; /* Adjust the opacity of the image */
+    border-radius: 10px; /* Optional: Add rounded corners to the image itself */
+}
+/* Container to hold the image */
+.image-container {
+    position: relative;
+    width: 100%; /* Adjust width as per your design */
+    height: 500px; /* Adjust height as per your design */
+    overflow: hidden;
+    border: 5px solid #e2d4d4; /* Border around the container */
+    border-radius: 10px; /* Optional: Add rounded corners to the container */
+    transition: box-shadow 0.3s ease-in-out; /* Transition for shadow animation */
+}
+
+/* Style for the image */
+.image {
+    width: 100%; /* Make the image span the full width of its container */
+    height: 100%; /* Make the image span the full height of its container */
+    object-fit: cover; /* Ensure the image covers the area and maintains aspect ratio */
+    opacity: 0.8; /* Adjust the opacity of the image */
+    border-radius: 10px; /* Optional: Add rounded corners to the image itself */
+    transition: box-shadow 0.3s ease-in-out; /* Transition for shadow animation */
+}
+
+/* Hover effect for the image container */
+.image-container:hover {
+    box-shadow: 0 10px 20px rgba(186, 8, 221, 0.5); /* Add a shadow on hover */
+}
+
+/* Hover effect for the image itself */
+.image:hover {
+    box-shadow: 0 10px 20px rgba(182, 112, 6, 0.281); /* Add shadow effect on image hover */
+    transform: scale(1.05); /* Slightly scale the image when hovered */
+}
+
+
 
 @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
+    0% { background-position: 10% 50%; }
     50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    100% { background-position: 20% 50%; }
 }
 
 .welcome-heading h1 {
@@ -156,16 +228,46 @@ nav {
 }
 
 /* Shop Section */
+/* Style for the entire shop section */
 #shop {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #f1f1f1;
+    padding: 20px;
 }
 
-#shop h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+/* Style for the product list */
+.product-list {
+    display: flex;
+    gap: 20px; /* Space between product cards */
+    flex-wrap: wrap; /* Allow wrapping of cards if screen is too small */
 }
+
+/* Style for individual product cards */
+.product-card {
+    text-align: center;
+    width: 200px; /* Set the width of each product card */
+    padding: 10px;
+    border: 1px solid #ddd; /* Border around each product card */
+    border-radius: 10px; /* Optional: Rounded corners for the product card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Light shadow around the product card */
+}
+
+/* Style for the product image */
+.product-image {
+    width: 100%; /* Make image take up the full width of the product card */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid #333; /* Border around the image */
+    border-radius: 5px; /* Optional: Rounded corners for the image */
+    padding: 5px; /* Optional: Padding between image and border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation on hover */
+}
+
+/* Hover effect for the product image */
+.product-card:hover .product-image {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+
+
 
 /* Product Cards */
 .product-list {
@@ -175,16 +277,41 @@ nav {
     flex-wrap: wrap;
 }
 
-.product-card {
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+.product-card 
+   /* Ensure the body takes up the full height of the page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;     /* Vertically center the content */
+    font-family: Arial, sans-serif;
 }
-jss
+
+/* Center the product card inside the section */
+.product-card {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd; /* Optional: add border around the card */
+    border-radius: 8px; /* Optional: round corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow to make it stand out */
+}
+
+/* Style the image with border and opacity */
+.product-image {
+    border: 3px solid #000; /* Add a solid black border around the image */
+    border-radius: 10px; /* Optional: rounded corners for the image */
+    opacity: 0.8; /* Set opacity to 80% */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and hover effect */
+}
+
+.product-image:hover {
+    opacity: 1; /* Set opacity to 100% when hovered */
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+
 // Help Button Functionality
 document.querySelector('.help-btn').addEventListener('click', function() {
     alert("How can we assist you today?\nContact us at support@shop.com.");
