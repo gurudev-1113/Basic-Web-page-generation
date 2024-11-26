@@ -152,32 +152,6 @@ nav {
 
 /* Hero Section */
 #hero {
-    background: #f4f4f4;
-    padding: 80px 20px;
-    text-align: bottom;
-}
-
-#hero .hero-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 250px;
-}
-
-#hero #search-bar {
-    width: 60%;
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 1px solid #aa2525;
-}
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Hero Section */
-#hero {
     position: relative;
     width: 100%;
     height: 100vh; /* Full viewport height */
@@ -189,22 +163,10 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 180%;
-    height: 450px;
-    object-fit: full; /* Ensures the image covers the entire section */
-    filter: partial blur(5px); /* Optional: slight blur effect */
-    animation: zoomIn 1.5s ease-out forwards; /* Animation for the image */
+    width: 100%;
+    height: 100%; /* Make image fill the section */
+    object-fit: cover; /* Ensures the image covers the entire section */
     z-index: -1; /* Keeps the image behind the content */
-}
-
-/* Animation for the image zoom-in effect */
-@keyframes zoomIn {
-    0% {
-        transform: scale(1.1); /* Start slightly zoomed in */
-    }
-    100% {
-        transform: scale(1); /* End at normal size */
-    }
 }
 
 /* Hero Content Styling */
@@ -214,6 +176,11 @@ nav {
     text-align: center;
     color: white; /* White text for better contrast */
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure content fills the height */
     animation: fadeIn 1.5s ease-out forwards; /* Animation for the text */
 }
 
@@ -229,7 +196,7 @@ nav {
 
 .hero-content h1 {
     font-size: 3em;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adjust spacing between the heading and search bar */
 }
 
 #search-bar {
@@ -246,7 +213,6 @@ nav {
     outline: none;
     border: 2px solid #ff6347; /* Change border color on focus */
 }
-
 
 /* Restaurant Listings */
 #restaurants {
@@ -335,7 +301,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 
 
 
