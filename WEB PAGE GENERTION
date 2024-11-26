@@ -1,272 +1,357 @@
-//index.html file//
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shopping</title>
+    <title>Online Food Delivery</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://tinyurl.com/4crxpuf9" alt="Food Delivery Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#restaurants">Restaurants</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" class="login-btn">Login</a></li>
+            </ul>
+        </nav>/
+    </header>
 
-    <!-- Entrance Page -->
-    <div id="entrance-page">
-            <h1>WELCOME FOR YOUR GREAT SHOPPING WEBSITE</h1>
-           <hr style="border: 2px solid #000; width: 80%; margin: 20px auto;">
+    <!-- Hero Section -->
+     
+<section id="hero">
+    <div class="hero-content">
+        <pre> 
+        <h1>Find the Best Food Delivery Near You</h1>
+        </pre>
+        <input type="text" placeholder="Search for restaurants." id="search-bar">
+        <img src="https://tinyurl.com/4txa99z7" alt="Food Delivery">
+    </div>
+</section>
 
-            <br>
-           <p>Welcome to our online shopping store, your one-stop destination for a wide range 
-            of high-quality products at unbeatable prices. 
-            Whether you're looking for the latest fashion trends, 
-            cutting-edge electronics, home essentials, or unique gifts, we have it all. 
-            Our easy-to-navigate website offers 
-            a seamless shopping experience, with secure payment options, fast delivery,
-             and excellent customer service. Discover 
-            exclusive deals and enjoy hassle-free returns and exchanges.
-            Shop from the comfort of your home and have your favorite 
-            items delivered straight to your door. Start shopping now and experience 
-            the convenience of online shopping like never before!</p>
+
+
+   <!-- Restaurant Listings -->
+   <section id="restaurants">
+    <h2>Popular Restaurants</h2>
+    <div class="restaurant-list">
+        <!-- Restaurant Card 1 -->
+        <div class="restaurant-card">
+            <img src="https://tinyurl.com/t5nrrk2x" alt="Restaurant">
+            <h3>Open Roof Restaurant</h3>
+            <p>Category: Italian</p>
+            <p>Rating: 4.5 ⭐</p>
+            <a href="#menu" class="view-menu">View Menu</a>
         </div>
-        <button id="enter-shop">Enter Shop</button>
+
+        <!-- Restaurant Card 2 -->
+        <div class="restaurant-card">
+            <img src="https://tinyurl.com/wmfz5dkv" alt="Restaurant">
+            <h3>Sea Breeze Cafe</h3>
+            <p>Category: Coffee Day</p>
+            <p>Rating: 4.7 ⭐</p>
+            <a href="#menu" class="view-menu">View Menu</a>
+        </div>
+
+        <!-- Restaurant Card 3 -->
+        <div class="restaurant-card">
+            <img src="https://tinyurl.com/3dyxntpc" alt="Restaurant">
+            <h3>Star Bucks</h3>
+            <p>Category: Indian</p>
+            <p>Rating: 4.2 ⭐</p>
+            <a href="#menu" class="view-menu">View Menu</a>
+        </div>
+
+        <!-- Restaurant Card 4 -->
+        <div class="restaurant-card">
+            <img src="https://tinyurl.com/3f82cf9y" alt="Restaurant">
+            <h3>Banglore Veg Restaurant</h3>
+            <p>Category: Indian</p>
+            <p>Rating: 4.2 ⭐</p>
+            <a href="#menu" class="view-menu">View Menu</a>
+        </div>
+
+        <!-- Add more restaurant cards as necessary -->
     </div>
+</section>
 
-    <!-- Main Content -->
-    <div id="main-page" style="display:Amazon;">
-        <!-- Navigation Bar -->
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#help">Help</a></li>
-                </ul>
-            </nav>
-        </header>
+</section>
 
-        <main>
-            <h2>Shop by Category</h2>
-            <section id="categories">
-                <!-- Laptop Section -->
-                <div class="category">
-                    <img src="OIP (2).jfif" alt="Laptop">
-                    <h3>Laptops</h3>
-                    <p>Discover the latest laptops from top brands at affordable prices.</p>
-                </div>
 
-                <!-- Mobile Phones Section -->
-                <div class="category">
-                    <img src="OIP.jfif" alt="Mobile Phones">
-                    <h3>Mobile Phones</h3>
-                    <p>Explore the best mobile phones with the latest features.</p>
-                </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Food Delivery. All rights reserved.</p>
+        <p>Contact number:8977921616</p>
+    </footer>
 
-                <!-- Groceries Section -->
-                <div class="category">
-                    <img src="OIP (1).jfif" alt="Groceries">
-                    <h3>Groceries</h3>
-                    <p>Fresh groceries delivered right to your doorstep.</p>
-                </div>
-
-                <!-- Clothes Section -->
-                <div class="category">
-                    <img src="2489629.jpg" alt="Clothes">
-                    <h3>Clothes</h3>
-                    <p>Shop the latest trends in clothing for every season.</p>
-                </div>
-
-                <!-- Sunglasses Section -->
-                <div class="category">
-                    <img src="7d548e27-01f0-43a9-bcd7-afe71f6472b1.91a7d5c8991278afc7d5fd64afcd8cd0.webp" alt="Sunglasses">
-                    <h3>Sunglasses</h3>
-                    <p>Protect your eyes in style with the latest sunglasses.</p>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <!-- Help Button (blinking) -->
-    <div id="help" onclick="alert('How can we assist you?')">
-        <button>Help!</button>
-    </div>
-    
-
+    <script src="script.js"></script>
 </body>
 </html>
-//styles.css//
-/* Resetting default margin, padding, and box-sizing */
-* {
+
+
+
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Page Background and Entrance Page Animation */
-body {
-    background: linear-gradient(45deg, rgba(0, 60, 255, 0.973), #1a93a8);
-    animation: gradientBackground 5s infinite alternate;
-}
-
-/* Entrance Page */
-#entrance-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
-
-#floating-welcome h1 {
-    font-size: 3rem;
-    color: white;
-    position: absolute;
-    animation: floatingMessage 2s infinite ease-in-out;
-}
-
-#enter-shop {
-    padding: 15px 30px;
-    font-size: 1.5rem;
-    background-color: #726e31;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    animation: buttonHover 0.5s ease infinite alternate;
-}
-
-/* Help Button (blinking) */
-#help button {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #1f0adf;
-    color: rgb(18, 176, 187);
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    animation: blinking 1s linear infinite;
 }
 
 /* Navigation Bar */
 header {
-    background-color: #1a4eaf;
-    color: rgb(212, 194, 28);
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(139, 98, 98, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999;
+    background-color: #333;
+    padding: 10px;
 }
 
-header nav ul {
+nav {
     display: flex;
-    justify-content: center;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav ul li {
-    margin: 0 20px;
-}
-
-header nav ul li a {
-    color: rgb(40, 202, 194);
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-/* Main Page */
-#main-page {
-    display: none;
-    padding-top: 100px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #333;
-}
-
-#categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 30px;
-    padding: 20px;
-}
-
-.category {
-    background-color: #e9e9e9;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(180, 2, 2, 0.1);
-    padding: 20px;
-    text-align: center;
+.logo img {
+    width: 150px;  /* Adjust the size of the logo */
     transition: transform 0.3s ease;
 }
 
-.category:hover {
-    transform: scale(1.05);
+/* Add shadow effect to the logo */
+.logo img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(76, 18, 114, 0.2); /* Shadow around the logo */
 }
 
-.category img {
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background: #f4f4f4;
+    padding: 80px 20px;
+    text-align: bottom;
+}
+
+#hero .hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 250px;
+}
+
+#hero #search-bar {
+    width: 60%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #aa2525;
+}
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow of content outside the viewport */
+}
+
+/* Background Image Styling */
+#hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 450px;
+    object-fit: full; /* Ensures the image covers the entire section */
+    filter: partial blur(5px); /* Optional: slight blur effect */
+    animation: zoomIn 1.5s ease-out forwards; /* Animation for the image */
+    z-index: -1; /* Keeps the image behind the content */
+}
+
+/* Animation for the image zoom-in effect */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1.1); /* Start slightly zoomed in */
+    }
+    100% {
+        transform: scale(1); /* End at normal size */
+    }
+}
+
+/* Hero Content Styling */
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensures the text and search bar appear on top of the image */
+    text-align: center;
+    color: white; /* White text for better contrast */
+    padding: 50px;
+    animation: fadeIn 1.5s ease-out forwards; /* Animation for the text */
+}
+
+/* Fade-in Animation for the Content */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 60%;
+    max-width: 500px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Optional: Add styling for the search bar focus */
+#search-bar:focus {
+    outline: none;
+    border: 2px solid #ff6347; /* Change border color on focus */
+}
+
+
+/* Restaurant Listings */
+#restaurants {
+    padding: 50px;
+    background-color: #c8cfdb;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Restaurant Card Styles */
+.restaurant-card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+    width: 23%;
+    box-shadow: 0 4px 8px rgba(2, 85, 139, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect and animation for restaurant cards */
+.restaurant-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(39, 5, 78, 0.527); /* Larger shadow on hover */
+}
+
+.restaurant-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
-.category h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.restaurant-card img:hover {
+    transform: scale(1.1); /* Slight zoom effect for images on hover */
 }
 
-.category p {
-    font-size: 1.1rem;
-    color: #555;
+.restaurant-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-/* Footer */
+.restaurant-card p {
+    margin: 5px 0;
+}
+
+.restaurant-card .view-menu {
+    background-color: #041e64;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.restaurant-card .view-menu:hover {
+    background-color: #858080;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .restaurant-card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .restaurant-card {
+        width: 100%;
+    }
+}
+
+/* Footer Section */
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
     text-align: center;
-    position: fixed;
-    width: 100%;
+    padding: 20px;
+    position: relative;
     bottom: 0;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
-/* Animations */
-@keyframes floatingMessage {
-    0% { transform: translateY(-10px); opacity: 0.5; }
-    50% { transform: translateY(10px); opacity: 1; }
-    100% { transform: translateY(-10px); opacity: 0.5; }
-}
 
-@keyframes gradientBackground {
-    0% { background: linear-gradient(45deg, rgb(187, 176, 180), #4CAF50); }
-    100% { background: linear-gradient(45deg, #ff9f00, #4CAF50); }
-}
 
-@keyframes buttonHover {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.1); }
-}
 
-@keyframes blinking {
-    0% { opacity: 0.7; }
-    50% { opacity: 1; }
-    100% { opacity: 0.7; }
-}
-// script.jss//
-// JavaScript to show main page after entrance
-document.getElementById("enter-shop").addEventListener("click", function() {
-    document.getElementById("entrance-page").style.display = "none";
-    document.getElementById("main-page").style.display = "block";
+
+// Simple search bar functionality
+document.getElementById('search-bar').addEventListener('input', function(event) {
+    const query = event.target.value.toLowerCase();
+    const restaurantCards = document.querySelectorAll('.restaurant-card');
+
+    restaurantCards.forEach(card => {
+        const restaurantName = card.querySelector('h3').textContent.toLowerCase();
+        if (restaurantName.includes(query)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
 });
+
