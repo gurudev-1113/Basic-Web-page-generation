@@ -18,7 +18,8 @@
                 <li><a href="#restaurants">Restaurants</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#login" class="login-btn">Login</a></li>
+                 <li><a href="login.html" class="login-btn">Login</a></li>
+
             </ul>
         </nav>/
     </header>
@@ -93,6 +94,61 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://tinyurl.com/4crxpuf9" alt="Food Delivery Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section id="login">
+        <h2>Login</h2>
+        <form action="#" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Food Delivery. All rights reserved.</p>
+        <p>Contact number: 8977921616</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
